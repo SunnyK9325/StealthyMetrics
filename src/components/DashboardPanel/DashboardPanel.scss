@@ -1,0 +1,151 @@
+.dashboardPanel {
+    background-color: #F7FAFF;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 15px;
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 12px;
+
+            .title {
+                span {
+                    font-size: 30px;
+                    font-weight: 200;
+                    font-family: 'Helvetica', sans-serif;
+                }
+            }
+
+            .menu {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+                padding: 7px 15px;
+                border-radius: 18px;
+                background-color: white;
+                box-shadow: 0 1px 2px rgba(109, 107, 107, 0.1), 0 1px 5px rgba(109, 107, 107, 0.1);
+
+                .icon {
+                    cursor: pointer;
+                    font-size: 25px;
+                    transition: transform 0.3s ease;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+
+                span {
+                    color: grey
+                }
+            }
+        }
+
+        .statusCards {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .quickActions {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 23px;
+
+            .heading {
+                font-weight: 500;
+                font-size: 18px;
+                margin-bottom: 7px;
+            }
+
+            .actions {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 18px 0;
+                border-radius: 15px;
+                background-color: white;
+                padding-left: 48px;
+                box-shadow: 0 1px 2px rgba(109, 107, 107, 0.1), 0 1px 5px rgba(109, 107, 107, 0.1);
+
+                .item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    transition: transform 0.3s ease;
+                    cursor: pointer;
+
+                    .title {
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+
+                    &:not(:last-child) {
+                        border-right: 1px solid #C5C5C5;
+                    }
+
+                    padding-right: 48px;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+
+        .alertSection {
+            display: flex;
+            flex-direction: column;
+            margin-top: 23px;
+
+            .heading {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-bottom: 7px;
+
+                .title {
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+
+                .option {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 14px;
+                    color: #1A3875;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #007bff;
+                    }
+                }
+            }
+
+            .alerts {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 10px;
+                margin-top: 10px;
+                border-radius: 15px;
+
+                .alert {
+                    background-color: white;
+                    width: 44%;
+                }
+            }
+        }
+    }
+}

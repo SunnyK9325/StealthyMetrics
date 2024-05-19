@@ -1,0 +1,74 @@
+.activityPanel {
+    display: flex;
+    padding: 10px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        .highlights {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            .heading {
+                font-weight: 500;
+                font-size: 18px;
+            }
+
+            .date {
+                font-weight: 500;
+                font-size: 12px;
+                color: gray;
+            }
+
+            .financeSummary {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 8px;
+                margin-bottom: 6px;
+
+                .item {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 7px;
+                    border: 2px solid rgb(226, 219, 219);
+                    padding: 10px;
+                    width: 42%;
+                    border-radius: 5px;
+                    transition: all 0.3s ease-in-out;
+                    cursor: pointer;
+
+                    &:hover {
+                        border: 2px solid #007bff;
+                    }
+
+                    .type {
+                        font-weight: 500;
+                        font-size: 13px;
+                        color: #636262;
+                    }
+
+                    .amount {
+                        font-weight: 500;
+                        font-size: 15px;
+                    }
+
+                    .status {
+                        font-weight: 500;
+                        font-size: 12px;
+                        color: gray;
+                    }
+                }
+            }
+        }
+
+        .activities {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+    }
+}
