@@ -2,6 +2,8 @@ import React from "react";
 import "./ActivityPanel.scss";
 import ActivityListCard from "../ActivityListCard/ActivityListCard";
 
+console.log(import.meta.env.VITE_MY_NAME);
+
 // Functional component for displaying the activity panel
 const ActivityPanel = () => {
     return (
@@ -38,7 +40,8 @@ const ActivityPanel = () => {
                     <ActivityListCard id="scheduled" activity="Scheduled Activities (14)" />
                 </div>
                 <div className="author">
-                    <div><span>made by sunnykumar9325@gmail.com</span></div>
+                <span>made by </span>
+                <span>{import.meta.env.VITE_MY_NAME}</span>
                 </div>
             </div>
         </div>
