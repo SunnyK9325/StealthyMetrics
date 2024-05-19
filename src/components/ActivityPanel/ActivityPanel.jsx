@@ -37,6 +37,9 @@ const ActivityPanel = () => {
                     {/* Render a card for scheduled activities */}
                     <ActivityListCard id="scheduled" activity="Scheduled Activities (14)" />
                 </div>
+                <div className="author">
+                    <div><span>made by sunnykumar9325@gmail.com</span></div>
+                </div>
             </div>
         </div>
     );
